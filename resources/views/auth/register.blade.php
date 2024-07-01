@@ -37,7 +37,7 @@
 
         <!-- Type Account -->
         <div class="mt-4">
-            <x-input-label for="email" :value="__('Tipo de Cuenta')" />
+            <x-input-label for="email" :value="__('Account Type')" />
 
             <select     id="rol"
                         name="rol"
@@ -70,7 +70,7 @@
 
         <!-- Confirm Password -->
         <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirmar Password')" />
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
 
             <x-text-input   id="password_confirmation"
                             class="block mt-1 w-full {{ $errors->get('password_confirmation') ? 'border-red-600' : '' }}"
