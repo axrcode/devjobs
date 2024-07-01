@@ -46,8 +46,8 @@
                         required
             >
                 <option value="">Seleccionar tipo cuenta</option>
-                <option value="1">Developer - Busco empleo</option>
-                <option value="2">Recruiter - Publicar empleo</option>
+                <option value="1" @if(old('rol')=="1") selected @endif>Developer - Busco empleo</option>
+                <option value="2" @if(old('rol')=="2") selected @endif>Recruiter - Publicar empleo</option>
             </select>
 
             <x-input-error :messages="$errors->get('rol')" class="mt-2" />
